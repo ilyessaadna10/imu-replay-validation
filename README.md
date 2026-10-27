@@ -6,6 +6,8 @@ Everything runs in Python on Linux with MuJoCo, using the Universal Robots UR5e 
 
 ![Replay accuracy and IMU calibration](results/replay_and_imu.png)
 
+Video of the replay (arm, drawn brush, brush-head trail and close-up, live raw vs calibrated gyro): [results/bench_demo.mp4](results/bench_demo.mp4)
+
 ## Pipeline
 
 ```
@@ -21,6 +23,7 @@ human brushing poses (120 Hz, position + quaternion)
 |---|---|
 | `bench.py` | Motions, IK and trajectory planning, replay, motion capture and IMU models, calibration |
 | `run_all.py` | Runs everything and writes `results/results.md` and the figure |
+| `render_video.py` | Renders the replay video |
 
 ## Results (full numbers in [results/results.md](results/results.md))
 
